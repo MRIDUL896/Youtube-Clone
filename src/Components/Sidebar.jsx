@@ -49,7 +49,7 @@ const Sidebar = () => {
                 <ul className="p-3">
                     {mainElements.map(({ icon: Icon, desc }) => {
                         return (
-                            <a href=".">
+                            <a href="." key={desc}>
                                 <li key={desc} className="flex flex-row items-center rounded-lg hover:bg-zinc-700">
                                     <Icon className="text-2xl mx-4" />
                                     <span className="m-2">{desc}</span>
@@ -65,7 +65,7 @@ const Sidebar = () => {
                 <ul className="p-3">
                     {otherElements.map(({ icon: Icon, desc }) => {
                         return (
-                            <a href="."><li key={desc} className="flex flex-row items-center rounded-lg hover:bg-zinc-700">
+                            <a href="." key={desc}><li key={desc} className="flex flex-row items-center rounded-lg hover:bg-zinc-700">
                                 <Icon className="text-2xl mx-4" />
                                 <span className="m-2">{desc}</span>
                             </li></a>
